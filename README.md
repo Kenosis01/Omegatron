@@ -4,8 +4,8 @@ A FastAPI server that combines models from multiple AI providers, offering a uni
 
 ## Features
 
-- **70+ unique AI models** from five providers (Flowith, Cloudflare, Typefully, OIVSCODE, MiniMax)
-- **Clean model names** (removed @cf/@hf prefixes from Cloudflare models)
+- **70+ unique AI models** from five providers
+- **Clean model names** 
 - **OpenAI-compatible API** endpoints
 - **Streaming and non-streaming** chat completions
 - **Automatic provider routing** based on model selection
