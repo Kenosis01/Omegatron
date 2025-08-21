@@ -20,7 +20,6 @@ app = FastAPI(title="Omegatron AI API", version="2.0.0")
 flowith_provider = FlowithProvider()
 cloudflare_provider = CloudflareProvider()
 typefully_provider = TypefullyProvider()
-oivscode_provider = OIVSCodeProvider()
 minimax_provider = MinimaxProvider()
 
 # Create provider mapping
@@ -28,7 +27,6 @@ PROVIDERS = {
     "flowith": flowith_provider,
     "cloudflare": cloudflare_provider,
     "typefully": typefully_provider,
-    "oivscode": oivscode_provider,
     "minimax": minimax_provider
 }
 
@@ -166,7 +164,7 @@ async def root():
     """Root endpoint with API information"""
     return {
         "message": "Omegatron AI API",
-        "version": "2.0.0",
+        "version": "1.0.0",
         "provider": "omegatron",
         "endpoints": {
             "models": "/v1/models",
