@@ -11,10 +11,10 @@ from datetime import datetime
 import uuid
 
 # Import providers
-from providers import FlowithProvider, CloudflareProvider, TypefullyProvider, OIVSCodeProvider, MinimaxProvider
+from providers import FlowithProvider, CloudflareProvider, TypefullyProvider, MinimaxProvider
 from providers.base import ChatCompletionRequest, ChatCompletionResponse, Message, Usage, Choice
 
-app = FastAPI(title="Omegatron AI API", version="2.0.0")
+app = FastAPI(title="Omegatron AI API", version="1.0.0")
 
 # Initialize providers
 flowith_provider = FlowithProvider()
